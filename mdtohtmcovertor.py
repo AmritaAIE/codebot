@@ -1,7 +1,7 @@
 import os
 import markdown
 
-filename = "picnic"
+filename = "team_01"
 md_file_loc = f'mdfileshere/{filename}.md'
 html_file_loc = f'htmlfileshere/{filename}.html'
 
