@@ -1,49 +1,188 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-    <article class="post">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1>{{ post.title }}</h1>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Cabin.css">
+    <link rel="stylesheet" href="assets/css/Lora.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Hover-cards.css">
+    <link rel="stylesheet" href="assets/css/Team-icons.css">
+    <link rel="stylesheet" href="assets/css/Team-images.css">
+</head>
 
-        <div>
-          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
+    <header id="home" class="masthead" style="background-image: url('assets/img/intro-bg.jpg');position: relative;">
+        <div class="intro-body">
+            <div class="container" style="width: 1140px;">
+                <div class="row" style="margin-right: 0px;margin-left: 0px;width: 1140px;">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading">CODEBOT</h1>
+                        <p class="intro-text"><span style="color: rgb(255, 255, 255);">Check Out our latest HACKATHON below</span></p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </a>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
+            <div class="container"><a class="navbar-brand" href="#">AMRITA AIE</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item nav-link"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="#competetion">COMPETETION</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="#team">tEAM</a></li>
+                        <li class="nav-item nav-link" id="contact-1"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="text-center content-section" id="about" style="height: 100%;position: relative;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2><strong><span style="color: rgb(66, 220, 163);">ABOUT CODEBOT</span></strong></h2>
+                    <p><strong><span style="color: rgb(211, 211, 211);">CodeBOT Hackathon is a unique two-day event that combines the power of coding, </span></strong><br><strong><span style="color: rgb(211, 211, 211);">prompt engineering, and large language models to tackle </span></strong><br><strong><span style="color: rgb(211, 211, 211);">the challenges posed by today's environmental issues. </span></strong><br><br><strong><span style="color: rgb(211, 211, 211);">With a focus on the theme "One Earth, One Family, One Future," which aligns with this year's </span></strong><br><strong><span style="color: rgb(211, 211, 211);">G20 agenda, this hackathon empowers participants to leverage cutting-edge technology </span></strong><br><strong><span style="color: rgb(211, 211, 211);">for a sustainable and inclusive future.</span></strong><br><br><strong><span style="color: rgb(211, 211, 211);">This is a one of its kind,&nbsp;pioneering college event that explores the potential of large language models for environmental applications. Be part of a community of passionate individuals determined to make a positive change, and together, let's create a better world for generations to come.</span></strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center download-section content-section" id="competetion" style="background-image: url('assets/img/downloads-bg.jpg');height: 100%;position: relative;">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h1><strong>COMPETETION HOSTED</strong></h1>
+                <p><span style="color: rgb(255, 255, 255);">Here you can view everything that happened in the</span><br><span style="color: rgb(255, 255, 255);">hackathon with the submissions from our students</span></p><a class="btn btn-primary btn-lg btn-default" role="button" href="codebot.html">visit competetion page</a>
+            </div>
+        </div>
+    </section>
+    <section id="team" style="position: relative;">
+        <div class="container py-4 py-xl-5">
+            <div class="row mb-4 mb-lg-5" style="width: 1140px;">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2>Our Team</h2>
+                    <p>Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
+                </div>
+            </div>
+            <div class="row gy-4 row-cols-2 row-cols-md-4 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center" style="width: 1140px;margin: 0px;padding-top: 6px;padding-bottom: 6px;">
+                <div class="col">
+                    <div class="card border-0 shadow-none" style="height: 100%;">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/soman.jpeg">
+                            <h5 class="fw-bold text-primary card-title mb-0"><strong>KP SOMAN</strong></h5>
+                            <p class="text-muted card-text mb-2">Faculty Lead</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 row-cols-2 row-cols-md-4 d-flex justify-content-center" style="width: 1140px;margin: 0px;padding-top: 6px;padding-bottom: 6px;">
+                <div class="col">
+                    <div class="card border-0 shadow-none" style="height: 100%;">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/premjith.jpeg">
+                            <h5 class="fw-bold text-primary card-title mb-0"><strong>John Smith</strong></h5>
+                            <p class="text-muted card-text mb-2">Faculty mentor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-none" style="height: 100%;">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/sachin.jpeg">
+                            <h5 class="fw-bold text-primary card-title mb-0">Sachin kumar s</h5>
+                            <p class="text-muted card-text mb-2">Faculty mentor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 row-cols-2 row-cols-md-4" style="width: 1140px;margin: 0px;padding-top: 6px;padding-bottom: 6px;">
+                <div class="col">
+                    <div class="card border-0 shadow-none">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/aadharsh.jpeg">
+                            <h5 class="fw-bold text-primary card-title mb-0">Aadharsh Aadhithya A</h5>
+                            <p class="text-muted card-text mb-2">Ideation,Lead-Organizer,co-facilitator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-none" style="height: 100%;">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/anirudh.jpeg">
+                            <h5 class="fw-bold text-primary card-title mb-0">Anirudh Edpuganti</h5>
+                            <p class="text-muted card-text mb-2">Lead-Organizer,Co-Facilitator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-none" style="height: 100%;">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/intro-bg.jpg">
+                            <h5 class="fw-bold text-primary card-title mb-0"><strong><span style="color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) ;">DIVI ESWAR CHOWDRI</span></strong></h5>
+                            <p class="text-muted card-text mb-2">Lead-Organizer,Co-Facilitator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-none" style="height: 100%;">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/nikhil.jpeg">
+                            <h5 class="fw-bold text-primary card-title mb-0"><strong><span style="color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) ;">PALETI NIKHIL CHOWDRI</span></strong></h5>
+                            <p class="text-muted card-text mb-2">Co-Facilitators</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 row-cols-2 row-cols-md-4" style="width: 1140px;margin: 0px;padding-top: 6px;padding-bottom: 6px;">
+                <div class="col">
+                    <div class="card border-0 shadow-none" style="height: 100%;">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/logeshksr.jpeg">
+                            <h5 class="fw-bold text-primary card-title mb-0">Logesh KSR</h5>
+                            <p class="text-muted card-text mb-2">Co-Facilitators</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-none" style="height: 100%;">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/siddhu.jpeg">
+                            <h5 class="fw-bold text-primary card-title mb-0">Siddharth d</h5>
+                            <p class="text-muted card-text mb-2">Volunteer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-none" style="height: 100%;">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/viga.jpeg">
+                            <h5 class="fw-bold text-primary card-title mb-0">vighashvar a</h5>
+                            <p class="text-muted card-text mb-2">Volunteer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-none" style="height: 100%;">
+                        <div class="card-body text-center d-flex flex-column align-items-center p-0" style="margin: 31px;"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="assets/img/intro-bg.jpg">
+                            <h5 class="fw-bold text-primary card-title mb-0"><strong><span style="color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) ;">Sharbesh </span></strong><br><strong><span style="color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) ;">waran n</span></strong></h5>
+                            <p class="text-muted card-text mb-2">Volunteer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center content-section" id="contact" style="height: 100%;position: relative;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact us</h2>
+                    <p><span style="color: rgb(255, 255, 255);">Feel free to leave us a comment on github link below</span><a>&nbsp;the official Amrita AIE page</a><span style="color: rgb(255, 255, 255);">&nbsp;to give some feedback and changes</span></p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">&nbsp; Google+</span></button></li>
+                        <li class="list-inline-item"><a class="btn btn-primary btn-lg btn-default" role="button" href="https://github.com/AmritaAIE"><i class="fa fa-github fa-fw"></i><span class="network-name"> github</span></a></li>                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright ©&nbsp;AMRITA AIE 2023</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-
-  <!-- pagination -->
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <span class="webjeda">{{ page }}</span>
-      {% elsif page == 1 %}
-        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
-  </div>
-  {% endif %}
-</div>
+</html>
